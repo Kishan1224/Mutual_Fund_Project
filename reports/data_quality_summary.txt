@@ -1,0 +1,34 @@
+DATA QUALITY SUMMARY :
+
+1. Successfully loaded all 10 datasets.
+
+2. Dataset dimensions were verified using shape, column data types and first five records.
+
+3. No duplicate rows were found in any dataset.
+
+4. No missing values were observed in most datasets.
+
+5. The dataset 04_monthly_sip_inflows contains 12 missing values and requires further inspection during the cleaning phase.
+
+6. AMFI scheme codes are available in :
+   - 01_fund_master.csv
+   - 02_nav_history.csv
+   - 07_scheme_performance.csv
+   - 08_investor_transactions.csv
+   - 09_portfolio_holdings.csv
+
+7. Date columns such as launch_date, transaction_date, portfolio_date and date are currently stored as object datatype and will be converted to datetime during preprocessing.
+
+8. Dataset sizes range from 21 records to 46,000 records.
+
+9. Overall data quality is good and suitable for further ETL and analysis.
+
+10. Fund master analysis completed.
+
+11. Unique fund houses, categories and risk categories were explored.
+
+12. AMFI codes in fund master were validated against nav history.
+
+13. No missing AMFI codes were found.
+
+14. Live NAV data for six schemes was successfully fetched from mfapi.in and saved as raw CSV files.
